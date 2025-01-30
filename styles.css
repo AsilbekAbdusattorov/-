@@ -1,0 +1,238 @@
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    transition: background-color 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    transition: padding 0.3s ease;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+    animation: fadeIn 1s ease-out;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.hero .btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+/* Bike Description Section */
+.bike-description {
+    padding: 50px 20px;
+    text-align: center;
+    animation: slideIn 1s ease-out;
+}
+
+.bike-description h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.bike-description p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.bike-description .bike-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.bike-description .bike-image img:hover {
+    transform: scale(1.05);
+}
+
+.bike-description ul {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Battery Map Section */
+.battery-map {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #e9ecef;
+}
+
+.battery-map h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* How to Rent Section */
+.how-to-rent {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.how-to-rent h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.how-to-rent ol {
+    font-size: 18px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.how-to-rent .btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.how-to-rent .btn:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+/* Footer Section */
+.footer {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design (Media Queries) */
+
+/* Tablet and Small Screen Devices */
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .bike-description {
+        padding: 40px 20px;
+    }
+
+    .bike-description h2 {
+        font-size: 28px;
+    }
+
+    .bike-description p {
+        font-size: 16px;
+    }
+
+    .how-to-rent {
+        padding: 40px 20px;
+    }
+
+    .how-to-rent h2 {
+        font-size: 28px;
+    }
+
+    .how-to-rent .btn {
+        padding: 8px 16px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .bike-description {
+        padding: 30px 20px;
+    }
+
+    .bike-description h2 {
+        font-size: 24px;
+    }
+
+    .bike-description p {
+        font-size: 14px;
+    }
+
+    .how-to-rent {
+        padding: 30px 20px;
+    }
+
+    .how-to-rent h2 {
+        font-size: 24px;
+    }
+
+    .how-to-rent .btn {
+        padding: 8px 14px;
+    }
+}

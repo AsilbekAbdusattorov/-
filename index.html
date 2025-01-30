@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда Электрических Велосипедов</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Главный экран -->
+    <section class="hero">
+        <h1>Аренда Электрических Велосипедов</h1>
+        <p>Экологичный, быстрый и удобный способ передвижения по городу!</p>
+        <a href="#how-to-rent" class="btn">Арендовать сейчас</a>
+    </section>
+
+    <!-- Описание велосипеда -->
+    <section class="bike-description">
+        <h2>Наши Электровелосипеды</h2>
+        <p>У нас только одна модель: комфортные и надежные электровелосипеды для всех!</p>
+        <div class="bike-image">
+            <img src="./bike.jpg" alt="Электровелосипед">
+        </div>
+        <ul>
+            <li>Батарея: 500W</li>
+            <li>Максимальная скорость: 45 км/ч</li>
+            <li>Грузоподъемность: до 120 кг</li>
+            <li>Наличие багажника: да</li>
+        </ul>
+    </section>
+
+    <!-- Карта с точками замены батарей -->
+    <section class="battery-map" id="battery-stations">
+        <h2>Точки Замены Батарей в Бишкеке</h2>
+        <div id="map"></div>
+    </section>
+
+    <!-- Как арендовать -->
+    <section class="how-to-rent" id="how-to-rent">
+        <h2>Как арендовать велосипед?</h2>
+        <ol>
+            <li>Приезжайте в наш офис</li>
+            <li>Заполните анкету</li>
+            <li>Оставьте депозит</li>
+        </ol>
+        <a href="#contact" class="btn">Оставить заявку</a>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer" id="contact">
+        <p>Instagram | Телефон | WhatsApp</p>
+        <p>Ссылка на карту 2Gyz</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
